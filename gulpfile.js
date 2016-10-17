@@ -3,7 +3,7 @@ var less = require('gulp-less');
 var path = require('path');
 
 var paths = {
-  less: './less/**/*.less',
+  less: './less/main.less',
   css: './css'
 };
 
@@ -16,7 +16,7 @@ gulp.task('less', function () {
 });
 
 gulp.task('watch', function(){
-  gulp.watch(paths.less);
+  gulp.watch(paths.less, ['less']);
 });
 
 gulp.task('default', ['watch']);
