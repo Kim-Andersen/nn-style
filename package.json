@@ -9,7 +9,9 @@
   "author": "Kim Andersen <kimandersen1@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "connect": "^3.5.0",
     "gulp": "^3.9.1",
-    "gulp-less": "^3.1.0"
+    "gulp-less": "^3.1.0",
+    "serve-static": "^1.11.1"
   }
 }
