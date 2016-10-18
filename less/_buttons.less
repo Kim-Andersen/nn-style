@@ -1,7 +1,42 @@
-.btn-primary {background-color: #009FDA;border-color: #001965;}
+.btn {
+  min-width: 100px;
+}
+
+.btn-nn,
+.btn-nn:active,
+.btn-nn:focus,
+.btn-nn:hover {
+  background-color: #fff;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0d…IxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjbGVzc2hhdC1nZW5lcmF0ZWQpIiAvPjwvc3ZnPg==);
+  background-image: -webkit-linear-gradient(top,#fefefe 0,#f1f1f1 50%,#e1e1e1 51%,#eceff2 100%);
+  background-image: -moz-linear-gradient(top,#fefefe 0,#f1f1f1 50%,#e1e1e1 51%,#eceff2 100%);
+  background-image: -o-linear-gradient(top,#fefefe 0,#f1f1f1 50%,#e1e1e1 51%,#eceff2 100%);
+  background-image: linear-gradient(to bottom,#fefefe 0,#f1f1f1 50%,#e1e1e1 51%,#eceff2 100%);
+  padding: 7px;
+  border: 1px solid #d1d4d7;
+  color: #009fda;
+  border-radius: 2px;
+  box-shadow: 2px 2px 0 -1px #d9e3e8;
+}
+
+.btn-primary {
+  background-color: #009FDA;
+  border-color: #001965;
+}
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
-.open .dropdown-toggle.btn-primary { border-color: #000;background-color: #001965;}
+.open .dropdown-toggle.btn-primary {
+  border-color: #000;
+  background-color: #001965;
+}
+
+.btn-link,
+.btn-link:hover,
+.btn-link:active,
+.btn-link:focus {
+  color: @color-light-blue;
+  text-decoration: none;
+}

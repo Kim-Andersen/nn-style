@@ -1,0 +1,16 @@
+
+.gradient-gray {
+  @color-top:     #ffffff;
+  @color-bottom:  @color-pearl-grey;
+
+  background-image: -webkit-linear-gradient(top, @color-top, @color-bottom);
+  background-image:    -moz-linear-gradient(top, @color-top, @color-bottom);
+  background-image:     -ms-linear-gradient(top, @color-top, @color-bottom);
+  background-image:      -o-linear-gradient(top, @color-top, @color-bottom);
+  background-image:         linear-gradient(top, @color-top, @color-bottom);
+
+  /*IE7-*/
+  filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='@color-top', endColorStr='@color-bottom', GradientType=0);
+  /*IE8+*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(startColorStr='@color-top', endColorStr='@color-bottom', GradientType=0)";
+}

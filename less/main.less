@@ -1,9 +1,14 @@
+@import '_vars.less';
 @import '_colours.less';
 @import '_fonts.less';
 @import '_typography.less';
+@import '_helpers.less';
 @import '_navbar.less';
 @import '_inputs.less';
 @import '_buttons.less';
+@import '_breadcrumb.less';
+@import '_panels.less';
+@import '_gradients.less';
 
 @theme-color: #009FDA;
 
@@ -15,7 +20,16 @@ body {
   font-family: Verdana, Geneva, sans-serif;
 }
 
+a:link, a:visited, a:hover, a:active, a:focus {
+  color: @color-light-blue;
+  text-decoration: none;
+}
 
+/* External links */
+a[href*="//"]:after {
+    content: url(../Assets/external_link.png);
+    margin: 0 0 0 5px;
+}
 
 
 table {
@@ -45,7 +59,7 @@ table {
 th, td {padding: 10px;}
 h2 { font-size: x-large;}
 
-.shadow {color: #AEA79F;margin-top: 10px;margin-bottom: 10px;font-size: small;}
+//.shadow {color: #AEA79F;margin-top: 10px;margin-bottom: 10px;font-size: small;}
 .table-header { background: #E0DED8;}
 
 .header img.sorting {margin-top: 2px;float: right;margin-left: 2px;}
@@ -348,10 +362,4 @@ fieldset[disabled] .btn-primary.focus {
     opacity: 1;
     border-color: #000;
     background-color: #001965;
-}
-
-/* External links */
-a[href*="//"]:after {
-    content: url(../Assets/external_link.png);
-    margin: 0 0 0 5px;
 }
